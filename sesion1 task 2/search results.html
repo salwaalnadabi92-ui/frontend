@@ -9,101 +9,177 @@
 <body>
 <header>
     <h1>My  store</h1>
-    
-</header>
 
 <nav>
     <a href="Home.html">Home</a>
-    <a href="search results.html">search</a>
-   
+    <a href="search results.html">product</a>
+    <a href="#">Account</a>
+    <a href="#">Cart</a>
 </nav>
 
+</header>
+    
+
+
 <form>
-    <label>search products</label>
-    <input type ="search">
+    <label for="search">search</label>
+    <input type ="search"
+    id="search"
+    placeholder="search Products">
     <button>search</button>
 </form>
 
 
 
     <main>
+<nav>
+<a href="Home.html">Home</a>
+<span>Headphone</span>
+</nav>
+ <h2>Search Results</h2>
 
-        <h2>Search Results</h2>
+<section>
 
-        <section>
+    <h3>Filter Products</h3>
 
-            <article>
+    <form>
 
-                <img src="image/headphone.webp"
-                     alt="Wireless Headphones"
-                     width="200">
+        <fieldset>
 
-                <h3>Wireless Headphones</h3>
+            <legend>Category</legend>
 
-                <p><strong>Price:</strong> $120</p>
+            <label>
+                <input type="checkbox" name="category">
+                Headphones
+            </label>
 
-                <p>⭐⭐⭐⭐☆ (4.5/5)</p>
+            <br>
 
-                <p>
-                    Comfortable wireless headphones with excellent sound quality.
-                </p>
+            <label>
+                <input type="checkbox" name="category">
+                Smart Watches
+            </label>
 
-                <a href="product-details.html">
-                    View Product
-                </a>
+            <br>
 
-            </article>
+            <label>
+                <input type="checkbox" name="category">
+                Speakers
+            </label>
 
-            <hr>
+        </fieldset>
 
-            <article>
+        <br>
 
-                <img src="image/smart watch.jpg"
-                     alt="Smart Watch"
-                     width="200">
+        <fieldset>
 
-                <h3>Smart Watch</h3>
+            <legend>Rating</legend>
 
-                <p><strong>Price:</strong> $180</p>
+            <label>
+                <input type="radio" name="rating">
+                4 Stars & Up
+            </label>
 
-                <p>⭐⭐⭐⭐⭐ (5/5)</p>
+            <br>
 
-                <p>
-                    Smart watch with heart rate monitoring and GPS.
-                </p>
+            <label>
+                <input type="radio" name="rating">
+                3 Stars & Up
+            </label>
 
-                <a href="product-details.html">
-                    View Product
-                </a>
+        </fieldset>
 
-            </article>
+        <br>
 
-            <hr>
+        <fieldset>
 
-            <article>
+            <legend>Price</legend>
 
-                <img src="image/bluetooh speaker.jpg"
-                     alt="Bluetooth Speaker"
-                     width="200">
+            <label for="min-price">Min Price</label>
 
-                <h3>Bluetooth Speaker</h3>
+            <input
+                type="number"
+                id="min-price">
 
-                <p><strong>Price:</strong> $85</p>
+            <br><br>
 
-                <p>⭐⭐⭐⭐☆ (4/5)</p>
+            <label for="max-price">Max Price</label>
 
-                <p>
-                    Portable speaker with clear sound and long battery life.
-                </p>
+            <input
+                type="number"
+                id="max-price">
 
-                <a href="product-details.html">
-                    View Product
-                </a>
+        </fieldset>
 
-            </article>
+        <br>
 
-        </section>
+        <button type="submit">
 
-   <footer>
-    <p>&copy; 2026 MY store</p>
-   </footer>
+            Apply Filters
+
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<section>
+
+    <h3>Products</h3>
+
+    <article>
+
+        <img
+            src="image/headphone.webp"
+            alt="Wireless Headphones"
+            width="180">
+
+        <h4>
+            <a href="product-details.html">
+                Wireless Headphones
+            </a>
+        </h4>
+
+        <p>
+            Rating: ★★★★☆ (4.5/5)
+        </p>
+
+        <p>
+            235 Reviews
+        </p>
+
+        <p>
+            <del>$150</del>
+            <strong>$120</strong>
+        </p>
+
+        <p>
+            Free delivery tomorrow
+        </p>
+
+    </article>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+       

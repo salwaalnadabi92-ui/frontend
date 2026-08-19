@@ -163,7 +163,11 @@ console.log(first);
 
 //some and every
 
+const orderstatus=orders.some(o=> o.status==="Cancelled");
+console.log(orderstatus);
 
+const ordergreather=orders.every(o=> o.total>0);
+console.log(ordergreather);
 
 
 //sort

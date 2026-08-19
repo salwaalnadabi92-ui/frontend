@@ -68,8 +68,19 @@ const allorder=[...onlineorders,...instoreorders];
 console.log(allorder);
 
 
-//spread object
-
-
+//spread object/update 
+ //const order = { id: 101, customer: "Sara Ahmed", total: 249.99, status: "Shipped" }; 
 const update={...order, status:"Cancelled" }
 console.log(update);
+console.log(order);
+
+
+//function using a rest parameter
+
+function getall(...total)
+{
+return total;
+}
+
+console.log(getall(100,200,300,400));
+console.log(getall(100,200,300,400,500,600));

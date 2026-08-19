@@ -84,3 +84,62 @@ return total;
 
 console.log(getall(100,200,300,400));
 console.log(getall(100,200,300,400,500,600));
+
+
+//Array Methods
+
+
+const orders = [
+    {
+        id: 1,
+        customer: "Salwa",
+        total: 250,
+        status: "Shipped"
+    },
+    {
+        id: 2,
+        customer: " Fatam",
+        total: 150,
+        status: "Pending"
+    },
+    {
+        id: 3,
+        customer: "Mona",
+        total: 300,
+        status: "Shipped"
+    },
+    {
+        id: 4,
+        customer: "Ahmed",
+        total: 100,
+        status: "Cancelled"
+    },
+    {
+        id: 5,
+        customer: "Ali",
+        total: 450,
+        status: "Shipped"
+    },
+    {
+        id: 6,
+        customer: "Khalfan",
+        total: 75,
+        status: "Pending"
+    },
+    {
+        id: 7,
+        customer: "Balqees",
+        total: 200,
+        status: "Cancelled"
+    },
+    {
+        id: 8,
+        customer: "Omar",
+        total: 350,
+        status: "Shipped"
+    }
+];
+
+
+const sumtotal =orders.reduce((sum,item) => sum + item.total ,0);
+console.log(sumtotal);

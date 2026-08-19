@@ -32,3 +32,12 @@ for( const cities of city)
  
 }
 
+
+
+ //Destructuring
+
+ const order = { id: 101, customer: "Sara Ahmed", total: 249.99, status: "Shipped" }; 
+  const{ customer , total} = order;
+  console.log(customer,total);
+
+  

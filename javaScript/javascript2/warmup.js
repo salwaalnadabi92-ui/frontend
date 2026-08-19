@@ -174,3 +174,9 @@ console.log(ordergreather);
 
 orders.sort((a,b)=> b.total-a.total);
 console.log(orders);
+
+ //Chain at least one filter directly into a map 
+
+ const filters =orders.filter(o=>o.status==="Shipped")
+                      .map(o=>o.customer);
+ console.log(filters);

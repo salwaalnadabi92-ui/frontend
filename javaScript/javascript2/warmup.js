@@ -172,4 +172,5 @@ console.log(ordergreather);
 
 //sort
 
-
+orders.sort((a,b)=> b.total-a.total);
+console.log(orders);

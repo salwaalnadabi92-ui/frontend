@@ -57,3 +57,13 @@ function orderobject ({id, customer,total,status })
     return '${id} - ${customer} - ${total} - ${status}';
 }
  console.log(orderobject(order));
+
+
+ // Spread & Rest
+//combin
+ const onlineorders=[ 101,102,103];
+const  instoreorders=[200,300,400];
+const everyone=[...onlineorders,...instoreorders];
+const allorder=[...onlineorders,...instoreorders];
+console.log(allorder);
+

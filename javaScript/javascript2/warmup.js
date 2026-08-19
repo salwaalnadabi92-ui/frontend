@@ -34,10 +34,17 @@ for( const cities of city)
 
 
 
- //Destructuring
+ //Destructuring 
 
+ //object 
  const order = { id: 101, customer: "Sara Ahmed", total: 249.99, status: "Shipped" }; 
   const{ customer , total} = order;
   console.log(customer,total);
 
-  
+//array
+
+const number=[ 1,2,3,4];
+const[first ,second,...everythingelse]=number;
+console.log(first);
+console.log(second);
+console.log(everythingelse);

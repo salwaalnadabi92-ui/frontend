@@ -147,3 +147,7 @@ console.log(sumtotal);
 //2.filter
 const result =orders.filter(o=>o.status==="Shipped");
 console.log(result);
+
+
+const names =orders.map(o=>o.customer);
+console.log(names);

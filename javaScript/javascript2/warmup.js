@@ -88,7 +88,7 @@ console.log(getall(100,200,300,400,500,600));
 
 //Array Methods
 
-
+//1. reduce
 const orders = [
     {
         id: 1,
@@ -143,3 +143,7 @@ const orders = [
 
 const sumtotal =orders.reduce((sum,item) => sum + item.total ,0);
 console.log(sumtotal);
+
+//2.filter
+const result =orders.filter(o=>o.status==="Shipped");
+console.log(result);

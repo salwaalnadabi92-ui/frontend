@@ -48,3 +48,12 @@ const[first ,second,...everythingelse]=number;
 console.log(first);
 console.log(second);
 console.log(everythingelse);
+
+
+// function
+
+function orderobject ({id, customer,total,status })
+{
+    return '${id} - ${customer} - ${total} - ${status}';
+}
+ console.log(orderobject(order));

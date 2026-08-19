@@ -67,3 +67,9 @@ const everyone=[...onlineorders,...instoreorders];
 const allorder=[...onlineorders,...instoreorders];
 console.log(allorder);
 
+
+//spread object
+
+
+const update={...order, status:"Cancelled" }
+console.log(update);

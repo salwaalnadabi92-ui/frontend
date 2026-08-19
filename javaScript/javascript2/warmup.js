@@ -148,6 +148,24 @@ console.log(sumtotal);
 const result =orders.filter(o=>o.status==="Shipped");
 console.log(result);
 
-
+//map
 const names =orders.map(o=>o.customer);
 console.log(names);
+
+
+//find
+
+const firstorder= orders.find(o=> o.total>200);
+console.log(first);
+
+
+
+
+//some and every
+
+
+
+
+//sort
+
+

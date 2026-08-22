@@ -63,3 +63,14 @@ let totalInventoryValue = 0;
 for (const product of products) {
     totalInventoryValue += product.price * product.stock;
 }
+
+
+
+//  Low Stock Count
+let lowStockCount = 0;
+
+for (const product of products) {
+    if (product.stock < 10) {
+        lowStockCount++;
+    }
+}

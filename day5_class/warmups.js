@@ -24,7 +24,7 @@ class employee {
 
     this.name =name;
  
-    this.role=removeEventListener;
+    this.role=role;
 }
 
 getgreeting()

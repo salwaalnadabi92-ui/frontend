@@ -36,3 +36,7 @@ getgreeting()
 }
 
 
+const employee1 = new Employee("Sara", "Developer");
+
+console.log(employee1.getGreeting());
+

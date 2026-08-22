@@ -14,3 +14,25 @@ const discount = 0;
 console.log(discount || 10);//output :10
 
 console.log(discount ?? 10);//output :0
+
+
+//Classes
+
+class employee {
+
+    constructor(name,role){
+
+    this.name =name;
+ 
+    this.role=removeEventListener;
+}
+
+getgreeting()
+{
+
+         return ` my name is ${this.name} and I am a ${this.role}.`;
+}
+
+}
+
+

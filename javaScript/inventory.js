@@ -36,3 +36,22 @@ const products = [
         category: "Home"
     }
 ];
+
+
+
+
+//  Create Product Card
+const renderProductCard = (product) => {
+    return `
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">${product.name}</h5>
+                    <p>Price: $${product.price}</p>
+                    <p>Stock: ${product.stock}</p>
+                    <p>Category: ${product.category}</p>
+                </div>
+            </div>
+        </div>
+    `;
+};

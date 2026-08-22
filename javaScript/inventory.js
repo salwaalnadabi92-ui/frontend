@@ -55,3 +55,11 @@ const renderProductCard = (product) => {
         </div>
     `;
 };
+
+
+//  Total Inventory Value
+let totalInventoryValue = 0;
+
+for (const product of products) {
+    totalInventoryValue += product.price * product.stock;
+}

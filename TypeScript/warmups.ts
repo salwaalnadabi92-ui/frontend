@@ -17,3 +17,15 @@ let uncertainValue: unknown = "Salwa";
 if (typeof uncertainValue === "string") {
     console.log(uncertainValue.toUpperCase());
 }
+
+//Union  Types
+
+function processValue(value: string | number): void {
+    if (typeof value === "string") {
+        console.log(value.toUpperCase());
+    } else {
+        console.log(value * 2);
+    }
+}
+
+

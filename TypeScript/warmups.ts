@@ -29,3 +29,20 @@ function processValue(value: string | number): void {
 }
 
 
+//Intersection  type 
+
+//two small object types
+type ProductInfo = {
+    name: string;
+    price: number;
+};
+
+
+type InventoryInfo = {
+    quantity: number;
+};
+
+//combain :
+ type ProductRecord = ProductInfo & InventoryInfo;
+
+ 

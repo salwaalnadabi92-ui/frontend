@@ -10,3 +10,10 @@ const product: [string, number] = ["Laptop", 899.99];
 //Type Inference
 
 const customerName = "Salwa";
+
+//using unknown 
+
+let uncertainValue: unknown = "Salwa";
+if (typeof uncertainValue === "string") {
+    console.log(uncertainValue.toUpperCase());
+}

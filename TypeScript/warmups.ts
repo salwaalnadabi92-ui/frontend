@@ -45,4 +45,26 @@ type InventoryInfo = {
 //combain :
  type ProductRecord = ProductInfo & InventoryInfo;
 
- 
+// Typed Functions
+
+//Optional
+function greetCustomer(
+    name: string,
+    message?: string
+): string {
+    if (message) {
+        return `${message}, ${name}`;
+    }
+
+    return `Hello, ${name}`;
+}
+
+//Default Parameter
+function calculateTotal(
+    price: number,
+    tax: number = 0.05
+): number {
+    return price + price * tax;
+}
+
+//

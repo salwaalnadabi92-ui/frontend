@@ -133,3 +133,18 @@ class CreditCardPayment extends Payment {//Subclass
 
 const payment = new CreditCardPayment();//Instantiate
 payment.processPayment(100);
+
+
+
+//Generic Function
+
+function getLast<T>(items: T[]): T {
+    return items[items.length - 1];
+}
+
+const lastNumber = getLast([10, 20, 30]);
+const lastName = getLast(["Ali", "Sara", "Omar"]);
+const lastResult = getLast([true, false, true]);
+
+
+

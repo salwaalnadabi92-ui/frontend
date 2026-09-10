@@ -59,6 +59,11 @@ function greetCustomer(
     return `Hello, ${name}`;
 }
 
+
+console.log(greetCustomer("Ali"));
+console.log(greetCustomer("Ali", "Welcome"));
+
+
 //Default Parameter
 function calculateTotal(
     price: number,
@@ -66,6 +71,10 @@ function calculateTotal(
 ): number {
     return price + price * tax;
 }
+
+console.log(calculateTotal(100));
+console.log(calculateTotal(100, 0.10));
+
 
 //Classes	&	Access	Modifiers
 
@@ -91,6 +100,16 @@ class Order {
         return this.total;
     }
 }
+
+const order = new Order(1, "Ali");
+
+order.addAmount(100);
+
+console.log(order.customerName);
+console.log(order.orderId);
+console.log(order.getTotal());
+
+
 
 
 //—	Interfaces	&	Structural	Typing
@@ -145,6 +164,61 @@ function getLast<T>(items: T[]): T {
 const lastNumber = getLast([10, 20, 30]);
 const lastName = getLast(["Ali", "Sara", "Omar"]);
 const lastResult = getLast([true, false, true]);
+console.log(lastNumber);
+console.log(lastName);
+console.log(lastResult);
 
+//Generic Class + Constraint
+
+interface HasId {
+    id: number;
+}
+
+
+
+interface HasId {
+    id: number;
+}
+
+class Repository<T extends HasId> {
+    private items: T[] = [];
+
+    add(item: T): void {
+        this.items.push(item);
+    }
+
+    getById(id: number): T | undefined {
+        return this.items.find(item => item.id === id);
+    }
+
+    getAll(): T[] {
+        return this.items;
+    }
+}
+
+
+interface Product {
+    id: number;
+    name: string;
+    price: number;
+}
+
+const productRepository = new Repository<Product>();
+
+productRepository.add({
+    id: 1,
+    name: "Laptop",
+    price: 900
+});
+
+productRepository.add({
+    id: 2,
+    name: "Phone",
+    price: 500
+});
+
+console.log(productRepository.getAll());
+
+console.log(productRepository.getById(1));
 
 

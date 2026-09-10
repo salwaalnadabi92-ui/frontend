@@ -67,4 +67,26 @@ function calculateTotal(
     return price + price * tax;
 }
 
-//
+//Classes	&	Access	Modifiers
+
+class Order {
+    private total: number;
+
+    readonly orderId: number;
+
+    constructor(
+        orderId: number,
+        public customerName: string
+    ) {
+        this.orderId = orderId;
+        this.total = 0;
+    }
+
+    addAmount(amount: number): void {
+        this.total += amount;
+    }
+
+    getTotal(): number {
+        return this.total;
+    }
+}

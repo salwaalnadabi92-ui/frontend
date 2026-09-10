@@ -18,6 +18,7 @@ if (typeof uncertainValue === "string") {
     console.log(uncertainValue.toUpperCase());
 }
 
+
 //Union  Types
 
 function processValue(value: string | number): void {

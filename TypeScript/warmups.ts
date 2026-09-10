@@ -112,3 +112,24 @@ function printCustomer(customer: Customer): void {
 }
 
 printCustomer(customer);
+
+
+// Inheritance & 
+// Abstract Classes
+abstract class Payment {
+    abstract pay(amount: number): void;//no implementation
+
+    processPayment(amount: number): void {//Concrete method
+        console.log("Processing payment...");
+        this.pay(amount);
+    }
+}
+
+class CreditCardPayment extends Payment {//Subclass
+    pay(amount: number): void {
+        console.log(`Paid ${amount} using credit card.`);
+    }
+}
+
+const payment = new CreditCardPayment();//Instantiate
+payment.processPayment(100);

@@ -69,6 +69,7 @@ function calculateTotal(
 
 //Classes	&	Access	Modifiers
 
+//private -readonly field& constructor parameter-property shorthand
 class Order {
     private total: number;
 
@@ -90,3 +91,24 @@ class Order {
         return this.total;
     }
 }
+
+
+//—	Interfaces	&	Structural	Typing
+
+interface Customer {
+    id: number;
+    name: string;
+}
+
+const customer = {
+    id: 1,
+    name: "Ali",
+    email: "ali@example.com"
+};
+
+function printCustomer(customer: Customer): void {
+    console.log(customer.id);
+    console.log(customer.name);
+}
+
+printCustomer(customer);
